@@ -1,3 +1,4 @@
+import "../SASS/components/Hero.scss";
 import ActionButton from "./ActionButton";
 import PassiveButton from "./PassiveButton";
 

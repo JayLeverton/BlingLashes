@@ -1,3 +1,6 @@
+@import "./base/reset";
+@import "./sass-utils/colors.scss";
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -5,12 +8,13 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    // background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -28,10 +32,12 @@ body {
     display: flex;
     min-width: 320px;
     min-height: 100vh;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
-    font-size: 3.2em;
+
     line-height: 1.1;
 }
 
@@ -56,17 +62,48 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
+/* Global styles for light mode */
+body.light {
+    background-color: $backgroundLight;
+    color: $textLight;
 }
+
+/* Global styles for dark mode */
+body.dark {
+    background-color: $backgroundDark;
+    color: $textDark;
+}
+
+// 
+// Light theme
+// @media (prefers-color-scheme: light) {
+//     :root {
+//         color: $textLight;
+//         background-color: $backgroundLight;
+//     }
+
+//     a:hover {
+//         color: #747bff;
+//     }
+
+//     button {
+//         background-color: $dark-5;
+//     }
+// }
+
+// 
+// Dark theme
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         color: $textDark;
+//         background-color: $backgroundDark;
+//     }
+
+//     a:hover {
+//         color: #747bff;
+//     }
+
+//     button {
+//         background-color: $gray-9;
+//     }
+// }

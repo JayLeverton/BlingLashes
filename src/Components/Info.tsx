@@ -1,7 +1,9 @@
+import "../SASS/components/Info.scss";
+
 function Info() {
   return (
     <div className="info">
-      <div className=""></div>
+      <div className="">Info</div>
     </div>
   );
 }
