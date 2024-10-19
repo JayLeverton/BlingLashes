@@ -5,16 +5,14 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    height: 100%;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    // background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 a {
@@ -28,12 +26,12 @@ a:hover {
 }
 
 body {
-    margin: 0;
-    display: flex;
     min-width: 320px;
     min-height: 100vh;
+    height: 100%;
     justify-content: center;
     text-align: center;
+    transition: background-color 0.3s ease
 }
 
 h1 {
@@ -44,34 +42,56 @@ h1 {
 button {
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
 }
 
-button:hover {
-    border-color: #646cff;
-}
+// button:hover {
+//     border-color: #646cff;
+// }
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
+// button:focus,
+// button:focus-visible {
+//     outline: 4px auto -webkit-focus-ring-color;
+// }
 
 /* Global styles for light mode */
 body.light {
     background-color: $backgroundLight;
     color: $textLight;
+
+    button {
+        background-color: $buttonLight;
+    }
+
+    .primaryColor {
+        background-color: $primaryLight;
+    }
+
+    .secondaryColor {
+        background-color: $secondaryLight;
+    }
 }
 
 /* Global styles for dark mode */
 body.dark {
     background-color: $backgroundDark;
     color: $textDark;
+
+    button {
+        background-color: $buttonDark;
+    }
+
+    .primaryColor {
+        background-color: $primaryDark;
+    }
+
+    .secondaryColor {
+        background-color: $secondaryDark;
+    }
 }
 
 // 

@@ -1,0 +1,7 @@
+@import "../sass-utils/mixins.scss";
+
+.hero {
+    h1 {}
+
+    @include flex-center-column
+}

@@ -7,14 +7,12 @@ import Info from "./Info";
 import Instagram from "./Instagram";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
-import ThemeToggle from "./ThemeToggle";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header></Header>
-      <div className="background">
-        <ThemeToggle></ThemeToggle>
+      <div className="nonHeaderContent">
         <Hero></Hero>
         <Info></Info>
         <Services></Services>

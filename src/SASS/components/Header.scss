@@ -1,0 +1,26 @@
+@import "/src/SASS/sass-utils/colors.scss";
+@import "../sass-utils/mixins.scss";
+
+.header {
+    @include flex-center;
+    @include resetPaddingMargin;
+
+    font-size: small;
+    height: 80px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+// .light {
+//     background-color: $backgroundLight;
+//     color: $textLight;
+// }
+
+// .dark {
+//     background-color: $backgroundDark;
+//     color: $textDark;
+// }

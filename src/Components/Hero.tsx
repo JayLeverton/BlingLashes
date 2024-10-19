@@ -5,15 +5,16 @@ import PassiveButton from "./PassiveButton";
 function Hero() {
   return (
     <div className="hero">
-      <div>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
-          reprehenderit?
-        </h1>
-      </div>
-      <div>
-        <ActionButton></ActionButton>
-        <PassiveButton></PassiveButton>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
+        reprehenderit?
+      </h1>
+      <div className="">
+        <button className="ctaBtn">Book Appointment</button>
+        <button className="servicesBtn">View Services</button>
+
+        {/* <ActionButton></ActionButton>
+        <PassiveButton></PassiveButton> */}
       </div>
     </div>
   );
