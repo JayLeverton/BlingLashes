@@ -1,0 +1,76 @@
+@import "../sass-utils/mixins.scss";
+
+$orange: #ff9b54;
+$purple: #ae76a6;
+$blue: #a3c3d9;
+$lOrange: #f8bd7f;
+$gray: #efefef;
+
+.breakpoint-debugger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; // Adjusted height for visibility
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &::before {
+        position: absolute;
+        font-size: 2rem; // Larger text for visibility
+    }
+
+    @include mq("xxl") {
+        background-color: #e64040;
+        color: #fff;
+
+        &::after {
+            content: 'Extra Extra Large Devices';
+        }
+    }
+
+    @include mq("xl", "xxl") {
+        background-color: #e76add;
+        color: #fff;
+
+        &::after {
+            content: 'Extra Large Devices';
+        }
+    }
+
+    @include mq("lg", "xl") {
+        background-color: #6200ff;
+        color: #fff;
+
+        &::after {
+            content: 'Large Devices';
+        }
+    }
+
+    @include mq("md", "lg") {
+        background-color: #007bff;
+        color: #fff;
+
+        &::after {
+            content: 'Medium Devices';
+        }
+    }
+
+    @include mq("sm", "md") {
+        background-color: #28a79c;
+        color: #000;
+
+        &::after {
+            content: 'Small Devices';
+        }
+    }
+
+    @include mq("xs", "sm") {
+        background-color: #ffc107;
+        color: #000;
+
+        &::after {
+            content: 'Extra Small Devices';
+        }
+    }
+}

@@ -1,35 +1,35 @@
-import { useState, useEffect } from "react";
-import "../SASS/components/ThemeToggle.scss";
+import { useTheme } from "../context/ThemeContext";
 
 // Helper function to get the system theme preference
-const getSystemTheme = () => {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-};
+// const getSystemTheme = () => {
+//   return window.matchMedia("(prefers-color-scheme: dark)").matches
+//     ? "dark"
+//     : "light";
+// };
 
 const ThemeToggle = () => {
   // Get initial theme from localStorage or fall back to system preference
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    return savedTheme || getSystemTheme();
-  });
+  // const [theme, setTheme] = useState(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   return savedTheme || getSystemTheme();
+  // });
+  const { theme, toggleTheme } = useTheme();
 
   // Apply the theme by adding a class to the body element
-  useEffect(() => {
-    document.body.className = theme;
-    localStorage.setItem("theme", theme); // Save the preference in localStorage
-  }, [theme]);
+  // useEffect(() => {
+  //   document.body.className = theme;
+  //   localStorage.setItem("theme", theme); // Save the preference in localStorage
+  // }, [theme]);
 
   // Function to toggle between light and dark mode
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  // };
 
   const darkSVG = (
     <div className="svgContainer">
       <svg
-        className="svgContainer"
+        className=""
         fill="#000000"
         viewBox="0 0 35 35"
         data-name="Layer 2"
@@ -51,7 +51,7 @@ const ThemeToggle = () => {
   const lightSVG = (
     <div className="svgContainer">
       <svg
-        className="svgContainer"
+        className=""
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const ThemeToggle = () => {
   );
 
   return (
-    <button className="themeToggleBtn" onClick={toggleTheme}>
+    <button className="toggleBtn" onClick={toggleTheme}>
       {theme === "dark" ? lightSVG : darkSVG}
     </button>
   );

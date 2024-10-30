@@ -1,0 +1,90 @@
+@import "../sass-utils/variables";
+@import "../sass-utils/mixins";
+
+
+.button {
+    padding: $spacing-unit * 2 $spacing-unit * 4;
+    border: 1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: large;
+    @include flex-center;
+    @include push--auto;
+
+    &--black {
+        background-color: black;
+        color: white;
+    }
+
+    &--white {
+        background-color: white;
+        color: black;
+    }
+}
+
+body.dark .button {
+    background-color: $buttonDark;
+    color: white;
+
+    &--primary {
+        background-color: $primaryDark;
+        color: $textDark;
+    }
+
+    &--secondary {
+        background-color: rgba(255, 255, 255, 0);
+        color: $textDark;
+    }
+
+    &--black {
+        background-color: black;
+        color: white;
+    }
+
+    &--white {
+        background-color: white;
+        color: black;
+    }
+
+    &--white-text {
+        color: white;
+    }
+
+    &--black-text {
+        color: black;
+    }
+}
+
+body.light .button {
+    background-color: $buttonLight;
+    color: $textLight;
+
+    &--primary {
+        background-color: $primaryLight;
+        color: $textLight;
+    }
+
+    &--secondary {
+        background-color: rgba(255, 255, 255, 0);
+        color: $textLight;
+    }
+
+    &--black {
+        background-color: black;
+        color: white;
+    }
+
+    &--white {
+        background-color: white;
+        color: black;
+    }
+
+    &--white-text {
+        color: white;
+    }
+
+    &--black-text {
+        color: black;
+    }
+}

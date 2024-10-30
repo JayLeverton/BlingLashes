@@ -1,26 +1,26 @@
 // Dark
-$dark-0: #d5d7e0;
-$dark-1: #acaebf;
-$dark-2: #8c8fa3;
-$dark-3: #666980;
-$dark-4: #4d4f66;
-$dark-5: #34354a;
-$dark-6: #2b2c3d;
-$dark-7: #1d1e30;
-$dark-8: #0c0d21;
-$dark-9: #01010a;
+$dark-0: #dfdfdf;
+$dark-1: #bebebe;
+$dark-2: #a3a3a3;
+$dark-3: #838383;
+$dark-4: #646464;
+$dark-5: #494949;
+$dark-6: #3a3a3a;
+$dark-7: #2e2e2e;
+$dark-8: #1b1b1b;
+$dark-9: #0f0f0f;
 
 // Gray
-$gray-0: #f8f9fa;
-$gray-1: #f1f3f5;
-$gray-2: #e9ecef;
-$gray-3: #dee2e6;
-$gray-4: #ced4da;
-$gray-5: #adb5bd;
-$gray-6: #868e96;
-$gray-7: #495057;
-$gray-8: #343a40;
-$gray-9: #212529;
+$gray-0: #f5f5f5;
+$gray-1: #e7e7e7;
+$gray-2: #d4d4d4;
+$gray-3: #c2c2c2;
+$gray-4: #aaaaaa;
+$gray-5: #969696;
+$gray-6: #7c7c7c;
+$gray-7: #696969;
+$gray-8: #575757;
+$gray-9: #424242;
 
 // Red
 $red-0: #fff5f5;
@@ -167,19 +167,11 @@ $orange-8: #e8590c;
 $orange-9: #d9480f;
 
 // Custom
-$beige: #F5F5DC;
-
-// Light theme
-$backgroundLight: $beige;
-$textLight: $dark-9;
-$primaryLight: $blue-2;
-$secondaryLight: $pink-2;
-$buttonLight: $pink-2;
 
 
-// Dark theme
-$backgroundDark: $dark-6;
-$textDark: white;
-$primaryDark: $blue-6;
-$secondaryDark: $pink-7;
-$buttonDark: $blue-9;
+// 
+// 
+// __________________________________________________________________________
+// Numerical
+
+$spacing-unit: 7px;

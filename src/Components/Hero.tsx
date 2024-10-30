@@ -1,20 +1,16 @@
-import "../SASS/components/Hero.scss";
-import ActionButton from "./ActionButton";
-import PassiveButton from "./PassiveButton";
-
 function Hero() {
   return (
-    <div className="hero">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
-        reprehenderit?
-      </h1>
-      <div className="">
-        <button className="ctaBtn">Book Appointment</button>
-        <button className="servicesBtn">View Services</button>
-
-        {/* <ActionButton></ActionButton>
-        <PassiveButton></PassiveButton> */}
+    <div className="section hero">
+      <div className="hero-content">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur?
+        </h1>
+        <div className="buttons-column">
+          <button className="button button--white">Book Appointment</button>
+          <button className="button button--secondary button--white-text">
+            View Services
+          </button>
+        </div>
       </div>
     </div>
   );

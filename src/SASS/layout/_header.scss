@@ -1,9 +1,9 @@
-@import "/src/SASS/sass-utils/colors.scss";
+@import "../sass-utils/variables.scss";
 @import "../sass-utils/mixins.scss";
 
 .header {
     @include flex-center;
-    @include resetPaddingMargin;
+    @include reset-m-p;
 
     font-size: small;
     height: 80px;
@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 

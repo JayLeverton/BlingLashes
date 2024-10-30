@@ -1,27 +1,6 @@
-@import "../sass-utils/colors.scss";
+@import "../sass-utils/variables.scss";
+@import "../sass-utils/mixins.scss";
 
 body {
-    display: flex;
-    padding: 0;
-    margin: 0;
+    @include reset-m-p;
 }
-
-// .light {
-//     .text {
-//         color: $dark-9;
-//     }
-
-//     .background {
-//         background-color: $beige;
-//     }
-// }
-
-// .dark {
-//     .text {
-//         color: white;
-//     }
-
-//     .background {
-//         background-color: $dark-7;
-//     }
-// }

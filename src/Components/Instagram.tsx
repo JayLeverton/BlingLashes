@@ -1,7 +1,6 @@
-import "../SASS/components/Instagram.scss";
 
 function Instagram() {
-  return <div>Instagram</div>;
+  return <div className="section">Instagram</div>;
 }
 
 export default Instagram;

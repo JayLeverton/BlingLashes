@@ -2,7 +2,8 @@
     border: 2px solid red;
 }
 
-@mixin resetPaddingMargin {
+@mixin reset-m-p {
+    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -13,6 +14,12 @@
         right: auto;
     }
 }
+
+@mixin transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
 
 
 // 
@@ -29,11 +36,6 @@
     justify-content: center;
 }
 
-@mixin flex-center-column {
-    @include flex-center;
-    flex-direction: column;
-}
-
 @mixin flex-center-vert {
     display: flex;
     align-items: center;
@@ -44,6 +46,15 @@
     justify-content: center;
 }
 
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
 
 // 
 // Font size
@@ -75,25 +86,26 @@
 // Media Queries
 
 $breakpoints: (
-    "phone": 400px,
-    "phone-wide": 480px,
-    "phablet": 560px,
-    "tablet-small": 640px,
-    "tablet": 768px,
-    "tablet-wide": 1024px,
-    "desktop": 1248px,
-    "desktop-wide": 1440px
+    "xs": 0px,
+    // Extra small devices (phones, 0px and up)
+    "sm": 576px,
+    // Small devices (phones, 576px and up)
+    "md": 768px,
+    // Medium devices (tablets, 768px and up)
+    "lg": 992px,
+    // Large devices (desktops, 992px and up)
+    "xl": 1200px,
+    // Extra large devices (large desktops, 1200px and up)
+    "xxl": 1400px // Extra extra large devices (larger desktops, 1400px and up)
 );
 
-@mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
 
-        @if $type ==max {
-            $width: $width - 1px;
-        }
+@mixin mq($min-width, $max-width: 9999px) {
+    @if map_has_key($breakpoints, $min-width) and map_has_key($breakpoints, $max-width) {
+        $min-width: map-get($breakpoints, $min-width);
+        $max-width: map-get($breakpoints, $max-width);
 
-        @media only screen and (#{$type}-width: $width) {
+        @media only screen and (min-width: $min-width) and (max-width: $max-width) {
             @content;
         }
     }

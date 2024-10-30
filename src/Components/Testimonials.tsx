@@ -1,7 +1,6 @@
-import "../SASS/components/Testimonials.scss";
 
 function Testimonials() {
-  return <div>Testimonials</div>;
+  return <div className="section">Testimonials</div>;
 }
 
 export default Testimonials;

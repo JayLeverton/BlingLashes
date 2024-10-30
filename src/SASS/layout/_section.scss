@@ -1,0 +1,16 @@
+.section {
+    @include flex-center-column;
+    padding-bottom: 3rem;
+}
+
+body.light .section {
+    background-color: $backgroundLight;
+}
+
+body.light .section:nth-of-type(odd) {
+    background-color: $secondaryLight;
+}
+
+body.dark .section {
+    background-color: $backgroundDark;
+}

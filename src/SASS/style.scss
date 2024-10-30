@@ -1,5 +1,41 @@
+// Base
 @import "./base/reset";
-@import "./sass-utils/colors.scss";
+@import "./base/typography";
+
+// Utils
+@import "./sass-utils/variables";
+@import "./sass-utils/utilities";
+
+// Themes
+@import "./themes/dark";
+@import "./themes/light";
+
+// Pages
+@import "./pages/app";
+
+// Layout
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/section";
+@import "./layout/hero";
+@import "./layout/info";
+@import "./layout/services";
+@import "./layout/about";
+@import "./layout/testimonials";
+@import "./layout/instagram";
+@import "./layout/footer";
+
+// components
+@import "./components/breakpointDebugger";
+@import "./components/button";
+@import "./components/toggleButton";
+
+
+
+
+// Themes
+
+
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -39,33 +75,18 @@ h1 {
     line-height: 1.1;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
 
-// button:hover {
-//     border-color: #646cff;
-// }
 
-// button:focus,
-// button:focus-visible {
-//     outline: 4px auto -webkit-focus-ring-color;
-// }
 
 /* Global styles for light mode */
 body.light {
     background-color: $backgroundLight;
     color: $textLight;
 
-    button {
-        background-color: $buttonLight;
-    }
+    // button {
+    //     background-color: $buttonLight;
+    //     color: $textLight;
+    // }
 
     .primaryColor {
         background-color: $primaryLight;
@@ -74,6 +95,14 @@ body.light {
     .secondaryColor {
         background-color: $secondaryLight;
     }
+
+    .primaryTone {
+        background-color: $primaryToneLight;
+    }
+
+    .secondaryTone {
+        background-color: $secondaryToneLight;
+    }
 }
 
 /* Global styles for dark mode */
@@ -81,9 +110,10 @@ body.dark {
     background-color: $backgroundDark;
     color: $textDark;
 
-    button {
-        background-color: $buttonDark;
-    }
+    // button {
+    //     background-color: $buttonDark;
+    //     color: $textDark;
+    // }
 
     .primaryColor {
         background-color: $primaryDark;
@@ -92,38 +122,12 @@ body.dark {
     .secondaryColor {
         background-color: $secondaryDark;
     }
+
+    .primaryTone {
+        background-color: $primaryToneDark;
+    }
+
+    .secondaryTone {
+        background-color: $secondaryToneDark;
+    }
 }
-
-// 
-// Light theme
-// @media (prefers-color-scheme: light) {
-//     :root {
-//         color: $textLight;
-//         background-color: $backgroundLight;
-//     }
-
-//     a:hover {
-//         color: #747bff;
-//     }
-
-//     button {
-//         background-color: $dark-5;
-//     }
-// }
-
-// 
-// Dark theme
-// @media (prefers-color-scheme: dark) {
-//     :root {
-//         color: $textDark;
-//         background-color: $backgroundDark;
-//     }
-
-//     a:hover {
-//         color: #747bff;
-//     }
-
-//     button {
-//         background-color: $gray-9;
-//     }
-// }

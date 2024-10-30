@@ -1,0 +1,18 @@
+.services {}
+
+.allServicesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.serviceContainer {
+    // 
+}
+
+.serviceContainer p {
+    text-decoration-line: underline;
+    text-underline-offset: 0.5rem;
+}
