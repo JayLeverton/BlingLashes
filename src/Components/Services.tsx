@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 function Services() {
-  const lashesText =
-    "Lashes, ipsum dolor sit amet consectetur adipisicing elit. Molestias id quae molestiae? Eum, esse possimus!";
-  const browsText =
-    "Brows ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab sunt ut! Corrupti nam dolorum dolore et tenetur consequatur doloremque?";
-  const otherText =
-    "Other ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis suscipit impedit dolores ut ab quidem a nostrum odio voluptatum!";
+  // const lashesText =
+  //   "Lashes, ipsum dolor sit amet consectetur adipisicing elit. Molestias id quae molestiae? Eum, esse possimus!";
+  // const browsText =
+  //   "Brows ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab sunt ut! Corrupti nam dolorum dolore et tenetur consequatur doloremque?";
+  // const otherText =
+  //   "Other ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis suscipit impedit dolores ut ab quidem a nostrum odio voluptatum!";
 
-  const [serviceText, setServiceText] = useState<string>("");
+  // const [serviceText, setServiceText] = useState<string>("");
 
   return (
     <div className="section services">
