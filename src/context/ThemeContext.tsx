@@ -15,7 +15,11 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 const getSystemTheme = (): string => {
   const savedTheme = localStorage.getItem("theme");
-  return savedTheme || getSystemTheme();
+  if (savedTheme) return savedTheme;
+  return window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
 };
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
