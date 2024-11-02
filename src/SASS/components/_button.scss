@@ -9,8 +9,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: large;
-    @include flex-center;
-    @include push--auto;
+    text-wrap: nowrap;
 
     &--black {
         background-color: black;
@@ -19,39 +18,6 @@
 
     &--white {
         background-color: white;
-        color: black;
-    }
-}
-
-body.dark .button {
-    background-color: $buttonDark;
-    color: white;
-
-    &--primary {
-        background-color: $primaryDark;
-        color: $textDark;
-    }
-
-    &--secondary {
-        background-color: rgba(255, 255, 255, 0);
-        color: $textDark;
-    }
-
-    &--black {
-        background-color: black;
-        color: white;
-    }
-
-    &--white {
-        background-color: white;
-        color: black;
-    }
-
-    &--white-text {
-        color: white;
-    }
-
-    &--black-text {
         color: black;
     }
 }
@@ -86,5 +52,46 @@ body.light .button {
 
     &--black-text {
         color: black;
+    }
+
+    &--black-border {
+        border: 1px solid black;
+    }
+}
+
+body.dark .button {
+    background-color: $buttonDark;
+    color: white;
+
+    &--primary {
+        background-color: $primaryDark;
+        color: $textDark;
+    }
+
+    &--secondary {
+        background-color: rgba(255, 255, 255, 0);
+        color: $textDark;
+    }
+
+    &--black {
+        background-color: black;
+        color: white;
+    }
+
+    &--white {
+        background-color: white;
+        color: black;
+    }
+
+    &--white-text {
+        color: white;
+    }
+
+    &--black-text {
+        color: black;
+    }
+
+    &--black-border {
+        border: 1px solid black;
     }
 }

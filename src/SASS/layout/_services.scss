@@ -2,17 +2,25 @@
 
 .allServicesContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
+
 .serviceContainer {
-    // 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // @include debugBorder;
+    width: 100px;
 }
 
 .serviceContainer p {
+    letter-spacing: 5px;
+    text-wrap: nowrap;
     text-decoration-line: underline;
     text-underline-offset: 0.5rem;
 }

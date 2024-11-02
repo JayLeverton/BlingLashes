@@ -15,12 +15,25 @@ $cornSilk: #fefae0;
 $hintOfYellow: #faedcd;
 $honeyDreams: #d4a373;
 
+$eggshellBlue: #EAF2FF;
+
+// Natural Palette
+$naturalLB: #b9d9f0;
+$naturalDB: #00a0f3;
+$naturalLLB: #eefbff;
+$naturalLG: #e6f4f1;
+
+
+$bonBlue1: #80BAE0;
+$bonBlue2: #B9D9F0;
+$bonBlueCenterGradient: linear-gradient(to right, $bonBlue1, $bonBlue2);
+
 
 // Light theme
-$backgroundLight: $cornSilk;
+$backgroundLight: $naturalLB;
 $textLight: $dark-9;
-$primaryLight: $honeyDreams;
-$secondaryLight: $glaceGreen;
-$buttonLight: $sage;
-$primaryToneLight: $gray-0;
-$secondaryToneLight: $gray-3;
+$primaryLight: $naturalDB;
+$secondaryLight: $naturalLLB;
+$buttonLight: $naturalDB;
+$primaryToneLight: white;
+$secondaryToneLight: $gray-2;

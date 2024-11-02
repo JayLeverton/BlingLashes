@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 
 function Services() {
   // const lashesText =
@@ -11,7 +11,7 @@ function Services() {
   // const [serviceText, setServiceText] = useState<string>("");
 
   return (
-    <div className="section services">
+    <div className="services section">
       <h2>Services</h2>
       <div className="allServicesContainer">
         <div className="serviceContainer">
@@ -36,10 +36,10 @@ function Services() {
         </div>
       </div>
 
-      <div className="serviceDescription">
+      <p className="serviceDescription">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
         officia assumenda quibusdam, similique est ex.
-      </div>
+      </p>
     </div>
   );
 }

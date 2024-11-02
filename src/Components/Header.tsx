@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="header primaryTone">
       <ThemeToggle></ThemeToggle>
-      <h1>BlingLashes</h1>
+      <h1>BRB Lashies</h1>
       <SidebarToggle></SidebarToggle>
     </div>
   );

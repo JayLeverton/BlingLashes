@@ -31,16 +31,11 @@
 @import "./components/toggleButton";
 
 
-
-
-// Themes
-
-
-
 :root {
+    font-size: 62.5%;
+    /* (62.5/100) * 16px = 10px */
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+
     height: 100%;
 
     color-scheme: light dark;
@@ -51,11 +46,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
+
 
 a:hover {
     color: #535bf2;
@@ -70,10 +61,6 @@ body {
     transition: background-color 0.3s ease
 }
 
-h1 {
-
-    line-height: 1.1;
-}
 
 
 
