@@ -1,35 +1,11 @@
-// Base
-@import "./base/reset";
-@import "./base/typography";
-
-// Utils
-@import "./sass-utils/variables";
-@import "./sass-utils/utilities";
-
-// Themes
-@import "./themes/dark";
-@import "./themes/light";
+@use "./base" as *;
+@use "./components" as *;
+@use "./layout" as *;
+@use "./sass-utils" as *;
+@use "./themes" as *;
 
 // Pages
 @import "./pages/app";
-
-// Layout
-@import "./layout/header";
-@import "./layout/navbar";
-@import "./layout/section";
-@import "./layout/hero";
-@import "./layout/info";
-@import "./layout/services";
-@import "./layout/about";
-@import "./layout/testimonials";
-@import "./layout/instagram";
-@import "./layout/footer";
-
-// components
-@import "./components/breakpointDebugger";
-@import "./components/button";
-@import "./components/toggleButton";
-
 
 :root {
     font-size: 62.5%;

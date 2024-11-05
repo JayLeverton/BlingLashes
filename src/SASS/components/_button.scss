@@ -1,5 +1,5 @@
-@import "../sass-utils/variables";
-@import "../sass-utils/mixins";
+@use "../sass-utils/" as *;
+@use "../themes/" as *;
 
 
 .button {

@@ -1,4 +1,4 @@
-@import "../sass-utils/variables";
+@use "../sass-utils" as *;
 
 // Dark theme
 $backgroundDark: $dark-6;

@@ -4,7 +4,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Info from "./Info";
 import Instagram from "./Instagram";
-import MediaQueryDebug from "./BreakpointDebugger";
+// import MediaQueryDebug from "./BreakpointDebugger";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
 import { ThemeProvider } from "../context/ThemeContext";
@@ -22,7 +22,7 @@ function App() {
           <Testimonials></Testimonials>
           <Instagram></Instagram>
           <Footer></Footer>
-          <MediaQueryDebug />
+          {/* <MediaQueryDebug /> */}
         </div>
       </div>
     </ThemeProvider>

@@ -1,9 +1,9 @@
-@import "../sass-utils/variables.scss";
-@import "../sass-utils/mixins.scss";
+@use "../sass-utils/" as v;
+@use "../themes/" as t;
 
 .header {
-    @include flex-center;
-    @include reset-m-p;
+    @include v.flex-center;
+    @include v.reset-m-p;
 
     font-size: small;
     height: 80px;
@@ -14,7 +14,7 @@
     width: 100%;
     z-index: 10;
     text-wrap: nowrap;
-    border-bottom: 2px solid $primaryLight;
+    border-bottom: 2px solid t.$primaryLight;
 }
 
 

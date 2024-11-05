@@ -1,3 +1,5 @@
+@use "../sass-utils/" as *;
+
 .info {
     gap: 3rem;
     @include flex-center-column;

@@ -1,4 +1,4 @@
-@import "../sass-utils/mixins.scss";
+@use "../sass-utils" as *;
 
 $orange: #ff9b54;
 $purple: #ae76a6;
