@@ -29,6 +29,7 @@ const ThemeToggle = () => {
   const darkSVG = (
     <div className="svgContainer">
       <svg
+        height="100%"
         className=""
         fill="#000000"
         viewBox="0 0 35 35"
@@ -51,6 +52,7 @@ const ThemeToggle = () => {
   const lightSVG = (
     <div className="svgContainer">
       <svg
+        height="100%"
         className=""
         viewBox="0 0 24 24"
         fill="none"
