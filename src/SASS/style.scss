@@ -3,9 +3,7 @@
 @use "./layout" as *;
 @use "./sass-utils" as *;
 @use "./themes" as *;
-
-// Pages
-@import "./pages/app";
+@use "./pages" as *;
 
 :root {
     font-size: 62.5%;

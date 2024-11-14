@@ -57,6 +57,10 @@ body.light .button {
     &--black-border {
         border: 1px solid black;
     }
+
+    &--no-border {
+        border: none;
+    }
 }
 
 body.dark .button {
@@ -93,5 +97,9 @@ body.dark .button {
 
     &--black-border {
         border: 1px solid black;
+    }
+
+    &--no-border {
+        border: none;
     }
 }

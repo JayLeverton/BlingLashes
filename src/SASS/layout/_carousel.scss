@@ -1,0 +1,146 @@
+@use "../sass-utils" as *;
+
+.carousel {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-button {
+    display: flex;
+    border: none;
+    border-radius: 0;
+    font-size: 60px;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.light .carousel-button {
+    color: #333333;
+    background: none;
+}
+
+.dark .carousel-button {
+    color: white;
+    background: none;
+}
+
+.carousel-card {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    @include push--auto;
+}
+
+.card-pfp-name-date-logo {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.card-name-date-logo {
+    display: flex;
+}
+
+.carousel-card .pfp {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.card-name-date {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.carousel-card .card-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.carousel-card .card-date {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 1.15rem;
+    color: #888888;
+    text-align: left;
+}
+
+.star-rating {
+    display: flex;
+    gap: 1px;
+    padding-bottom: 5px;
+}
+
+.star-rating .star-icon {
+    width: 18px;
+}
+
+.carousel-card .reviewText {
+    text-align: left;
+}
+
+.card-name-date-logo {
+    width: 100%;
+}
+
+.carousel-card .card-logo {
+    margin-left: auto;
+}
+
+// Read More functionality
+
+.read-more-button {
+    color: #888888;
+    font-weight: 700;
+    display: flex;
+    margin-right: auto;
+    border: none;
+    background: none;
+    margin-top: 15px;
+}
+
+.review-text {
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    max-height: 250px;
+    transition: max-height 1s ease;
+}
+
+.review-text.expanded {
+    max-height: 5000px;
+}
+
+.carousel-card {
+    transition: max-height 1s ease;
+    min-height: 285px;
+}
