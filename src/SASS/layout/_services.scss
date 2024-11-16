@@ -47,13 +47,14 @@
 .serviceContainer p {
     letter-spacing: 5px;
     text-wrap: nowrap;
-    text-decoration-line: underline;
     text-underline-offset: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-self: end;
-    // @include debugBorder;
+}
 
+.underlined {
+    text-decoration: underline;
 }
 
 .serviceSVGContainer {

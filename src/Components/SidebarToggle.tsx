@@ -1,10 +1,14 @@
 import { useTheme } from "../context/ThemeContext";
 
-const SidebarToggle = () => {
+type SidebarToggleProps = {
+  toggleSidebar: () => void;
+};
+
+function SidebarToggle({ toggleSidebar }: SidebarToggleProps) {
   const { theme } = useTheme();
 
   return (
-    <button className="toggleBtn toggleBtn--right">
+    <button className="toggleBtn toggleBtn--right" onClick={toggleSidebar}>
       <div className="svgContainer">
         <svg
           height="100%"
@@ -46,6 +50,6 @@ const SidebarToggle = () => {
       </div>
     </button>
   );
-};
+}
 
 export default SidebarToggle;

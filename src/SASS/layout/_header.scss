@@ -8,11 +8,11 @@
     font-size: small;
     height: 80px;
     margin: auto;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
     text-wrap: nowrap;
     border-bottom: 2px solid t.$primaryLight;
 }

@@ -1,0 +1,39 @@
+@use "../sass-utils/" as *;
+
+
+.sidebar {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    @include debugBorder;
+    transform: translateX(100%);
+}
+
+.app {
+    overflow-x: hidden;
+}
+
+.sidebar-open {
+    transition: transform 0.25s ease;
+    transform: translateX(0%);
+}
+
+.sidebar-closed {
+    transition: transform 0.25s ease;
+    transform: translateX(100%);
+}
+
+.app-child-sidebar-open {
+    transition: transform 0.25s ease;
+    transform: translateX(-75%);
+}
+
+.app-child-sidebar-closed {
+    transition: transform 0.25s ease;
+    transform: translateX(0%);
+}

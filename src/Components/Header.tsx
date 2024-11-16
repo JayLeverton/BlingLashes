@@ -1,12 +1,16 @@
 import SidebarToggle from "./SidebarToggle";
 import ThemeToggle from "./ThemeToggle";
 
-function Header() {
+type HeaderProps = {
+  toggleSidebar: () => void;
+};
+
+function Header({ toggleSidebar }: HeaderProps) {
   return (
     <div className="header primaryTone">
-      <ThemeToggle></ThemeToggle>
+      <ThemeToggle />
       <h1>BRB Lashies</h1>
-      <SidebarToggle></SidebarToggle>
+      <SidebarToggle toggleSidebar={toggleSidebar} />
     </div>
   );
 }

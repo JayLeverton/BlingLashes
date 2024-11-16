@@ -46,7 +46,9 @@ function Services() {
                 </g>
               </svg>
             </div>
-            <p>Lashes</p>
+            <p className={serviceText === lashesText ? "underlined" : ""}>
+              Lashes
+            </p>
           </button>
         </div>
 
@@ -101,7 +103,9 @@ function Services() {
                 </g>
               </svg>
             </div>
-            <p>Brows</p>
+            <p className={serviceText === browsText ? "underlined" : ""}>
+              Brows
+            </p>
           </button>
         </div>
       </div>

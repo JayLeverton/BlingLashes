@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CarouselCard from "./CarouselCard";
-import test from "node:test";
 
 // Define the shape of a card
 interface Testimonial {
