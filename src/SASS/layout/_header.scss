@@ -6,7 +6,7 @@
     @include v.reset-m-p;
 
     font-size: small;
-    height: 80px;
+    height: v.$header-size;
     margin: auto;
     position: sticky;
     top: 0;

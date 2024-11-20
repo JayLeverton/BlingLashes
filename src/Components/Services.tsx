@@ -12,7 +12,7 @@ function Services() {
   const [serviceText, setServiceText] = useState<string>(lashesText);
 
   return (
-    <div className="services section">
+    <div className="services section" id="services">
       <h2>Services</h2>
       <div className="allServicesContainer">
         <div className="serviceContainer">
@@ -113,7 +113,6 @@ function Services() {
       <p className="serviceDescription" key={serviceText}>
         {serviceText}
       </p>
-      <div className="svgContainer"></div>
     </div>
   );
 }

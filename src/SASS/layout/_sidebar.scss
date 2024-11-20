@@ -1,26 +1,36 @@
 @use "../sass-utils/" as *;
+@use "../themes" as t;
 
 
 .sidebar {
     display: flex;
+    flex-direction: column;
     position: fixed;
     z-index: 10;
-    background-color: white;
     top: 0;
     right: 0;
     width: 75%;
     height: 100vh;
-    @include debugBorder;
-    transform: translateX(100%);
+    // transform: translateX(100%);
+    gap: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
 }
 
-.app {
-    overflow-x: hidden;
+.sidebar h4 {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.sidebar-anchor {
+    offset-anchor: 280px;
+    scroll-behavior: smooth;
 }
 
 .sidebar-open {
     transition: transform 0.25s ease;
-    transform: translateX(0%);
 }
 
 .sidebar-closed {
@@ -35,5 +45,20 @@
 
 .app-child-sidebar-closed {
     transition: transform 0.25s ease;
-    transform: translateX(0%);
+}
+
+.light .sidebar {
+    background-color: t.$primaryToneLight;
+}
+
+.light .sidebar a {
+    color: t.$textLight;
+}
+
+.dark .sidebar {
+    background-color: t.$primaryToneDark;
+}
+
+.dark .sidebar a {
+    color: t.$textDark;
 }

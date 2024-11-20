@@ -1,6 +1,6 @@
 function Instagram() {
   return (
-    <div className="section">
+    <div className="instagram section" id="instagram">
       <h2>Instagram</h2>
     </div>
   );

@@ -29,7 +29,7 @@ function Testimonials() {
   ];
 
   return (
-    <div className="section">
+    <div className="testimonials section" id="testimonials">
       <h2>Testimonials</h2>
       <Carousel testimonials={testimonialsData} />
     </div>

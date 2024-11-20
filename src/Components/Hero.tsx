@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero-content">
         {/* <h1>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur?

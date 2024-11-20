@@ -9,7 +9,7 @@ function SidebarToggle({ toggleSidebar }: SidebarToggleProps) {
 
   return (
     <button className="toggleBtn toggleBtn--right" onClick={toggleSidebar}>
-      <div className="svgContainer">
+      <div className="">
         <svg
           height="100%"
           viewBox="0 0 24 24"

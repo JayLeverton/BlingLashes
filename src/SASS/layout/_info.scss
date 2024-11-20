@@ -4,3 +4,12 @@
     gap: 3rem;
     @include flex-center-column;
 }
+
+.info-grouping {
+    white-space: nowrap
+}
+
+.info-grouping h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}

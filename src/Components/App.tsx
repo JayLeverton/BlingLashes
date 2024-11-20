@@ -9,7 +9,7 @@ import Services from "./Services";
 import Testimonials from "./Testimonials";
 import { ThemeProvider } from "../context/ThemeContext";
 import Sidebar from "./Sidebar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,7 +37,7 @@ function App() {
             <About></About>
             <Testimonials></Testimonials>
             <Instagram></Instagram>
-            <Footer></Footer>
+            <Info></Info>
             {/* <MediaQueryDebug /> */}
           </div>
         </div>

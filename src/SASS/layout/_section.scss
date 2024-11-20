@@ -1,10 +1,10 @@
 @use "../themes/" as t;
 
 .section {
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 35px;
 }
 
 body.light .section {
@@ -17,4 +17,8 @@ body.light .section:nth-of-type(even) {
 
 body.dark .section {
     background-color: t.$backgroundDark;
+}
+
+body.dark .section:nth-of-type(even) {
+    background-color: t.$backgroundDark2;
 }
