@@ -6,12 +6,16 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur?
         </h1> */}
         <div className="buttons-column">
-          <button className="button button--primary button--white-text button--black-border">
-            Book Appointment
-          </button>
-          <button className="button button--white button--black-text button--black-border">
-            View Services
-          </button>
+          <a href="#info">
+            <button className="button button--primary button--white-text button--black-border">
+              Book Appointment
+            </button>
+          </a>
+          <a href="#services">
+            <button className="button button--white button--black-text button--black-border">
+              View Services
+            </button>
+          </a>
         </div>
       </div>
     </div>

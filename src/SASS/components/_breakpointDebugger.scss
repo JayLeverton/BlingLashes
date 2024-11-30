@@ -20,57 +20,73 @@ $gray: #efefef;
         font-size: 2rem; // Larger text for visibility
     }
 
-    @include mq("xxl") {
+    @include mq("large-desktop") {
+        font-size: 2rem;
+        background-color: #40e640;
+        color: #000000;
+
+        &::after {
+            content: '4k Screen';
+        }
+    }
+
+    @include mq("desktop", "large-desktop") {
+        font-size: 2rem;
         background-color: #e64040;
         color: #fff;
 
         &::after {
-            content: 'Extra Extra Large Devices';
+            content: 'Desktop';
         }
     }
 
-    @include mq("xl", "xxl") {
+    @include mq("large-laptop", "desktop") {
+        font-size: 2rem;
         background-color: #e76add;
         color: #fff;
 
         &::after {
-            content: 'Extra Large Devices';
+            content: 'Large Laptop';
         }
     }
 
-    @include mq("lg", "xl") {
+    @include mq("laptop", "large-laptop") {
+        font-size: 2rem;
         background-color: #6200ff;
         color: #fff;
 
         &::after {
-            content: 'Large Devices';
+            content: 'Laptop';
         }
     }
 
-    @include mq("md", "lg") {
+    @include mq("large-tablet", "laptop") {
+        font-size: 2rem;
         background-color: #007bff;
         color: #fff;
 
         &::after {
-            content: 'Medium Devices';
+            content: 'Large Tablet';
         }
     }
 
-    @include mq("sm", "md") {
+    @include mq("tablet", "large-tablet") {
+        font-size: 2rem;
         background-color: #28a79c;
         color: #000;
 
         &::after {
-            content: 'Small Devices';
+            content: 'Tablet';
         }
     }
 
-    @include mq("xs", "sm") {
+    @include mq("mobile", "tablet") {
+        font-size: 2rem;
         background-color: #ffc107;
         color: #000;
 
         &::after {
-            content: 'Extra Small Devices';
+            content: 'Mobile';
         }
     }
 }

@@ -5,12 +5,16 @@
 @use "./themes" as *;
 @use "./pages" as *;
 
+
+
 :root {
-    font-size: 62.5%;
     /* (62.5/100) * 16px = 10px */
+    font-size: 62.5%;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     height: 100%;
-    // width: 100vw;
+    width: 100%;
+
+    overflow-x: hidden;
 
     color-scheme: light dark;
 
@@ -21,8 +25,8 @@
 
     transition: transform 0.5s ease-in-out;
     scroll-behavior: smooth;
-
 }
+
 
 * {
     scroll-margin-top: 80px;

@@ -47,3 +47,50 @@
     gap: 1rem;
     padding-bottom: 2rem;
 }
+
+// large tablets
+@include mq("large-tablet", "laptop") {
+    .hero {
+        background-position-y: 60%;
+        height: 500px;
+    }
+}
+
+// laptops
+@include mq("laptop", "desktop") {
+    .hero {
+        background-position-y: 60%;
+        height: 500px;
+    }
+}
+
+// desktops
+@include mq("desktop") {
+    .hero {
+        background: rgba(0, 0, 0, .05) url("/assets/BRB.jpg");
+        background-blend-mode: darken;
+
+        background-size: 100%;
+
+        background-position-y: 60%;
+        background-position-x: 50%;
+        height: 600px;
+    }
+}
+
+// large laptops
+// @include mq("large-laptop", "desktop") {
+//     .hero {
+//         background-position-y: 50%;
+//         height: 400px;
+//     }
+// }
+
+// desktops
+// @include mq("desktop") {
+//     .hero {
+//         background-size: 100%;
+//         background-position-y: 52%;
+//         height: 500px;
+//     }
+// }

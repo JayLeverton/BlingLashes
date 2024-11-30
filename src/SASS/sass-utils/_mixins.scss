@@ -86,26 +86,44 @@
 // Media Queries
 
 $breakpoints: (
-    "xs": 0px,
-    // Extra small devices (phones, 0px and up)
-    "sm": 576px,
-    // Small devices (phones, 576px and up)
-    "md": 768px,
-    // Medium devices (tablets, 768px and up)
-    "lg": 992px,
-    // Large devices (desktops, 992px and up)
-    "xl": 1200px,
-    // Extra large devices (large desktops, 1200px and up)
-    "xxl": 1400px // Extra extra large devices (larger desktops, 1400px and up)
+    // mobile, 0px and up
+    "mobile": 0px,
+
+    // tablets, 576px and up
+    "tablet": 576px,
+
+    // large tablets, 768px and up
+    "large-tablet": 768px,
+
+    // laptops, 992px and up
+    "laptop": 992px,
+
+    // large laptops, 1200px and up
+    "large-laptop": 1200px,
+
+    // desktops, 1400px and up
+    "desktop": 1400px,
+
+    // 4k screens, 2100px and up
+    "large-desktop": 2100px,
 );
 
 
-@mixin mq($min-width, $max-width: 9999px) {
-    @if map_has_key($breakpoints, $min-width) and map_has_key($breakpoints, $max-width) {
+@mixin mq($min-width, $max-width: null) {
+    @if map_has_key($breakpoints, $min-width) {
         $min-width: map-get($breakpoints, $min-width);
+    }
+
+    @if $max-width !=null and map_has_key($breakpoints, $max-width) {
         $max-width: map-get($breakpoints, $max-width);
 
-        @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+        @media only screen and (min-width: $min-width) and (max-width: calc($max-width - 0.01px)) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (min-width: $min-width) {
             @content;
         }
     }
