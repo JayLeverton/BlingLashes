@@ -21,6 +21,14 @@
 }
 
 
+@include mq("laptop") {
+    .sidebarToggle {
+        display: none;
+    }
+}
+
+
+
 body.light {
     .toggleBtn {
         @include toggleButton(white, $textLight, black)

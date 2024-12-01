@@ -1,0 +1,8 @@
+@use "../sass-utils/" as *;
+@use "../themes" as t;
+
+@include mq("mobile", "large-tablet") {
+    .navbar {
+        display: none;
+    }
+}

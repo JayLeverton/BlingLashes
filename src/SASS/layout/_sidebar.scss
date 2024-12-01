@@ -41,6 +41,24 @@
     transition: transform 0.25s ease;
 }
 
+
+// Responsiveness
+
+@include mq("laptop") {
+    .sidebar {
+        display: none;
+    }
+
+    .app-child-sidebar-open {
+        transition: transform 0.25s ease;
+        transform: translateX(0%);
+
+    }
+}
+
+
+// Theming
+
 .light .sidebar {
     background-color: t.$primaryToneLight;
 }

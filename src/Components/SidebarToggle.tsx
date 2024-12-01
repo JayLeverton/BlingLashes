@@ -8,7 +8,10 @@ function SidebarToggle({ toggleSidebar }: SidebarToggleProps) {
   const { theme } = useTheme();
 
   return (
-    <button className="toggleBtn toggleBtn--right" onClick={toggleSidebar}>
+    <button
+      className="sidebarToggle toggleBtn toggleBtn--right"
+      onClick={toggleSidebar}
+    >
       <div className="">
         <svg
           height="100%"
